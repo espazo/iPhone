@@ -3,6 +3,6 @@ import time
 print('minute version')
 
 one_minute = 60
-time.sleep(one_minute * 2)
+time.sleep(3 * one_minute)
 
 print('hey kevin, second commit')
