@@ -10,4 +10,4 @@ jobs:
         env:
           NAME: iPhone 16
         run: |
-          echo $NAME
+          echo hey, $NAME
