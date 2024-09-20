@@ -11,3 +11,9 @@ jobs:
           NAME: iPhone 16
         run: |
           echo hey, $NAME > output.txt
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-files
+          path: .output.txt
