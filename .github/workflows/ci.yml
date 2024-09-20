@@ -1,0 +1,13 @@
+name: iPhone Test
+on: push
+
+jobs:
+  my-jobs:
+    name: My Job
+    runs-on: macOS-latest
+    steps:
+      - name: say hi
+        env:
+          NAME: iPhone 16
+        run: |
+          echo $NAME
