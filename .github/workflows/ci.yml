@@ -28,4 +28,4 @@ jobs:
 
       - name: 'get ip'
         run: |
-          ifconfig
+          curl https://ipinfo.io/ip
