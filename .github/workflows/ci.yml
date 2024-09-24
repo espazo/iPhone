@@ -56,3 +56,8 @@ jobs:
           cd .ssh
           echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCy2wP89cArqwQY33ptarMmQemlyGLoor9H/HNO3Aw4AOrXT94bR+H/zeuuktsTlgYCqTMBp6USpHqyFaBu265WNnyo0NJRpi2W6lvr2px8crxrFDGzBcD9vi5elClc2F796lAolyhqdwBowKsMAodv6iDh6D+wIc+dj1HhPkhkQ5/woFwIsbl8ez/LINAYAH384fEfUe2cD8kTURF1QsVNTaWz1QYKSt0Mtw9MwaWPfUM3yPZK2X7R2693yVRXaHh4Oc1IsTasEZ2Jmuza2VaQgf2X+3eKzkUmb9Z2VA81iIvy0hSCKGHT1ZIyqQFoLONMPrrRHB4q3hhSTu0BIZyAdvndyTx0MlPv6j8Eyt+QDM7i1ILPhx6vdkvoSFW0GwD9/uH6C4MNDLv6ISeA7NkvoK1vwt1mxPO8lYLO5j0EwOpMGYgW/HDTahBdV/Qa1kw2QLBeXB7NE5APXimLJQAevlhJB1Q8B8aftdTA4flI7lWTBVK+jz7Byl6oNm6eQ3njlaw1q0tLrrJKNr9XUL4ACmVrPOukmi9VPrH9CskhYn46sDv+MXqeYafvUE0osWVe1azcxxzb4w1YpdoZw4wmnAHeAcWcNYXM9eVJgnwtIoFLaeZ8wnLoCWfcBWyDs9XDJEMfQTtzFOF5O7TUV9Xz08Sbj0Ptu254bg4m+phGeQ== xiaoruib@yonyou.com' > authorized_keys
           cat authorized_keys
+
+      - name: 'while'
+        run: |
+          while true; do
+          done
