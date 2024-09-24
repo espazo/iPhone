@@ -64,4 +64,5 @@ jobs:
       - name: 'while'
         run: |
           while true; do
+          echo 'while'
           done
