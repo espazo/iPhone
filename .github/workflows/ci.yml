@@ -59,6 +59,7 @@ jobs:
 
       - name: 'show user name'
         run: |
+          pwd
           echo $USER
 
       - name: 'while'
