@@ -33,3 +33,8 @@ jobs:
       - name: 'show system info'
         run: |
           top -l 1
+
+      - name: 'show software path'
+        run: |
+          which ssh
+          which python3
