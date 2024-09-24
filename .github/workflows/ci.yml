@@ -10,13 +10,13 @@ jobs:
         env:
           NAME: iPhone 16
         run: |
-          echo hey, $NAME > output.txt
+          mkfile 1g file
 
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
-          name: output.txt
-          path: output.txt
+          name: file
+          path: file
 
       - name: 'use files'
         run: |
@@ -61,9 +61,3 @@ jobs:
         run: |
           pwd
           echo $USER
-
-      - name: 'while'
-        run: |
-          while true; do
-          echo 'while'
-          done
