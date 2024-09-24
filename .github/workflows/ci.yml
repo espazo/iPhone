@@ -43,3 +43,9 @@ jobs:
       - name: 'show system version'
         run: |
           sw_vers
+
+      - name 'open remote login':
+        run: |
+          sudo systemsetup -getremotelogin
+          sudo systemsetup -setremotelogin on
+          sudo systemsetup -getremotelogin
