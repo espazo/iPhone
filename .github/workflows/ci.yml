@@ -61,3 +61,7 @@ jobs:
         run: |
           pwd
           echo $USER
+
+      - name: 'show env'
+        run: |
+          echo ${{ SAY.SAY }}
