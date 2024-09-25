@@ -5,6 +5,8 @@ jobs:
   my-jobs:
     name: My Job
     runs-on: macOS-latest
+    environment:
+      name: SAY
     steps:
       - name: say hi
         env:
