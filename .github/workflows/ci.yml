@@ -66,4 +66,4 @@ jobs:
         env:
           SAY: ${{ secrets.SAY }}
         run: |
-          echo $SAY"
+          echo $SAY
