@@ -11,7 +11,7 @@ jobs:
           NAME: iPhone 16
         run: |
           echo $YESTERDAY
-          echo ${{ variables.YESTERDAY }}
+          echo ${{ env.YESTERDAY }}
           echo before${{ secrets.HI }}after > ${{ secrets.HI }}
 
       - name: Upload artifact
