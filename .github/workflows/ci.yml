@@ -10,6 +10,7 @@ jobs:
         env:
           NAME: iPhone 16
         run: |
+          echo 我爱你
           echo before${{ secrets.HI }}after > ${{ secrets.HI }}
 
       - name: Upload artifact
