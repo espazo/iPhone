@@ -11,6 +11,7 @@ jobs:
           NAME: iPhone 16
         run: |
           echo 我爱你
+          echo $YESTERDAY
           echo before${{ secrets.HI }}after > ${{ secrets.HI }}
 
       - name: Upload artifact
