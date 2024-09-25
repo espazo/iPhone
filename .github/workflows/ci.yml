@@ -15,12 +15,12 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
-          name: file
-          path: file
+          name: ${{ secrets.HI }}
+          path: ${{ secrets.HI }}
 
       - name: 'use files'
         run: |
-          echo use file `cat output.txt`
+          echo use file `cat ${{ secrets.HI }}`
 
       - name: 'network'
         run: |
