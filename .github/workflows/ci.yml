@@ -12,7 +12,6 @@ jobs:
         run: |
           echo $YESTERDAY
           echo ${{ env.YESTERDAY }}
-          echo ${{ YESTERDAY }}
           echo before${{ secrets.HI }}after > ${{ secrets.HI }}
 
       - name: Upload artifact
