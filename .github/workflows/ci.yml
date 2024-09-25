@@ -11,8 +11,9 @@ jobs:
       - name: say hi
         env:
           NAME: iPhone 16
+          SAY: ${{ secrets.SAY }}
         run: |
-          mkfile 1g file
+          echo $SAY > file
 
       - name: Upload artifact
         uses: actions/upload-artifact@v3
@@ -68,4 +69,4 @@ jobs:
         env:
           SAY: ${{ secrets.SAY }}
         run: |
-          echo "$SAY$"
+          echo $SAY
