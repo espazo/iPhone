@@ -63,5 +63,7 @@ jobs:
           echo $USER
 
       - name: 'show env'
+        env:
+          SAY: ${{ secrets.SAY }}
         run: |
-          echo "${{ secrets.SAY }}"
+          echo $SAY"
