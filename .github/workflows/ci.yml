@@ -5,15 +5,12 @@ jobs:
   my-jobs:
     name: My Job
     runs-on: macOS-latest
-    environment:
-      name: SAY
     steps:
       - name: say hi
         env:
           NAME: iPhone 16
-          SAY: ${{ secrets.SAY }}
         run: |
-          echo $SAY > file
+          echo ${{ secrets.HI }} > file
 
       - name: Upload artifact
         uses: actions/upload-artifact@v3
@@ -66,7 +63,5 @@ jobs:
           echo $USER
 
       - name: 'show env'
-        env:
-          SAY: ${{ secrets.SAY }}
         run: |
-          echo $SAY
+          echo ${{ secrets.HI }}
